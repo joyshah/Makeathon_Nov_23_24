@@ -1,0 +1,71 @@
+page-list {
+
+}
+
+.shelf{
+    width:100%;
+    height:10px;
+    background-color: rgb(211, 197, 163);
+    margin-bottom: 10px;
+    
+}
+
+.path{
+    height:100%;
+    width:125%;
+    background-color: yellowgreen;
+    margin-left: -15%;
+}
+
+.asile{
+    background-color: beige;
+    // align-content: center;
+    // align-items: center;
+    // box-align: center;
+    text-align: center;
+    // margin-left: 10px;
+}
+
+.path_sub{
+width: 140%;
+height: 25px;
+background-color: yellowgreen;
+margin-left: -12px;
+// margin-bottom:-20px
+//border: solid, black, 4px; 
+// overflow: visible;
+}
+
+.midDiv{
+
+}
+
+.back{
+    background-color: yellow
+}
+
+.path_mid_up{
+    width: 140%;
+    height: 89px;
+    background-color: yellowgreen;
+    margin-left: -12px;
+    
+}
+
+.path_mid_mid{
+    width: 140%;
+    height: 89px;
+    background-color: yellowgreen;
+    margin-left: -12px;
+    
+}
+
+#dot{
+    font-size: 106px;
+    margin-top: -110px;
+    margin-right: -7px;
+    position: absolute;
+    z-index: 1000;
+    color: red;
+    
+}

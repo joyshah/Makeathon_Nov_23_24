@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <ion-title>Product Finder</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+
+  <button *ngIf="nevigating" ion-button full color="secondary" (click)="getStrength()">Please Follow </button>
+  <button *ngIf=" !nevigating" ion-button full color="danger" (click)="getStrength()">Tap To Start Navigation</button>
+  <div *ngFor="let network of vari">
+    <div *ngIf="network.SSID === 'Air 2.0' || network.SSID === 'Air 2.1' || network.SSID === 'Air 2.2' || network.SSID === 'Air 2.3'">
+      <h2>{{
+        network.SSID }},{{ network.level }}
+      </h2>
+    </div>
+  </div>
+  <page-list></page-list>
+</ion-content>

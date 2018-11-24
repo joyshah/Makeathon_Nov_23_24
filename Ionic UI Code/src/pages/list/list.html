@@ -1,0 +1,173 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+
+<ion-list>
+  <!-- <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)"> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col class="asile" col-2 col-xs>
+        <div>
+          <div *ngFor="let item of icons_left">
+            <div>
+              <ion-icon *ngFor="let repat of repeatTimes(4)" name={{item}} item-start>&nbsp;&nbsp;</ion-icon>
+            </div>
+            <diV class="shelf"></diV>
+          </div>
+          <div class="path_sub">
+          </div>
+          <div id='dot'>.</div>
+
+        </div>
+      </ion-col>
+      <!-- 2nd colm  -->
+      <ion-col col-2 col-xs>
+        <div class="path"></div>
+      </ion-col>
+
+      <ion-col class='midDiv' col-2 col-xs>
+        <div>
+          <div class="path_mid_up"></div>
+
+          <div class="asile" *ngFor="let item of icons_midUp">
+            <div>
+              <ion-icon name={{item}} item-start>&nbsp;</ion-icon>
+            </div>
+          </div>
+          <div class="shelf"></div>
+
+          <!--  -->
+          <div class="asile" *ngFor="let item of icons_midDown">
+            <div>
+              <ion-icon name={{item}} item-start>&nbsp;</ion-icon>
+            </div>
+          </div>
+          <diV class="shelf"></diV>
+          <div class="path_mid_up"></div>
+
+          <!--  -->
+
+        </div>
+
+        <div>
+
+
+          <div class="asile" *ngFor="let item of icons_midUp">
+            <div>
+              <ion-icon name={{item}} item-start>&nbsp;</ion-icon>
+            </div>
+          </div>
+          <div class="shelf"></div>
+
+          <!--  -->
+          <div class="asile" *ngFor="let item of icons_midDown">
+            <div>
+              <ion-icon name={{item}} item-start>&nbsp;</ion-icon>
+            </div>
+          </div>
+          <diV class="shelf"></diV>
+          <div class="path_sub"></div>
+
+          <!--  -->
+
+        </div>
+      </ion-col>
+
+
+
+      <!-- 3rd Column -->
+
+      <ion-col class='midDiv' col-2 col-xs>
+        <div>
+          <div class="path_mid_up"></div>
+
+          <div class="asile" *ngFor="let item of icons_midUp">
+            <div>
+              <ion-icon name={{item}} item-start>&nbsp;</ion-icon>
+            </div>
+          </div>
+          <div class="shelf"></div>
+
+
+
+          <!--  -->
+          <div class="asile" *ngFor="let item of icons_midDown">
+            <div>
+              <ion-icon name={{item}} item-start>&nbsp;</ion-icon>
+            </div>
+          </div>
+          <diV class="shelf"></diV>
+
+          <!--  -->
+
+        </div>
+
+
+        <div>
+          <div class="path_mid_up"></div>
+
+          <div class="asile" *ngFor="let item of icons_midUp">
+            <div>
+              <ion-icon name={{item}} item-start>&nbsp;</ion-icon>
+            </div>
+          </div>
+          <div class="shelf"></div>
+
+
+
+          <!--  -->
+          <div class="asile" *ngFor="let item of icons_midDown">
+            <div>
+              <ion-icon name={{item}} item-start>&nbsp;</ion-icon>
+            </div>
+          </div>
+          <diV class="shelf"></diV>
+          <div class="path_sub"></div>
+
+          <!--  -->
+
+        </div>
+      </ion-col>
+
+      <!-- Second path -->
+      <ion-col col-2 col-xs>
+        <div class="path"></div>
+      </ion-col>
+
+
+      <!-- Now Right Asile -->
+      <ion-col class="asile" col-2 col-xs>
+        <div *ngFor="let item of icons_left">
+          <div>
+            <ion-icon *ngFor="let repat of repeatTimes(4)" name={{item}} item-start>&nbsp;&nbsp;</ion-icon>
+          </div>
+          <diV class="shelf"></diV>
+        </div>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+
+
+  <!-- <div>
+      <ion-icon name="flask" item-start></ion-icon>
+      <ion-icon name="beer" item-start></ion-icon>
+    </div>
+    <diV>........</diV>
+    <div>
+      <ion-icon name="flask" item-start></ion-icon>
+      <ion-icon name="beer" item-start></ion-icon>
+    </div> -->
+  <!-- </button> -->
+</ion-list>
+<!-- <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div> -->
